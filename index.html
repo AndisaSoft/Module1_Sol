@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="Mod1App">
+  <head>
+    <meta charset="utf-8">
+    <title>Module 1 Solution</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="LunchCheckController">
+      <h1>Module 1 Solution</h1>
+      <div class="">
+        Please enter the items you want for lunch, separate each item by a comma.
+      </div>
+      <input type="text" ng-model="lunch" style="border:1px solid {{cssColor}}">
+      <button ng-click="checkLunch()">Check If Too Much</button>
+      <div style="color: {{cssColor}}">
+        {{msg}}
+      </div>
+    </div>
+  </body>
+</html>
